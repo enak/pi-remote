@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import lirc, sys
 import subprocess
 import re
@@ -5,6 +7,7 @@ import re
 BUS_SPOTIFY="qdbus org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player."
 HOST="skane@192.168.1.9"
 sessionkey=""
+SHOW_ERRORS=False
 
 def main():
     sockid = lirc.init("lircremote", blocking = True)
@@ -30,8 +33,9 @@ def my_ssh(command, handler, popen_arg):
 
     result = ssh.stdout.readlines()
     if result == []:
-        error = ssh.stderr.readlines()
-        print >>sys.stderr, "ERROR: %s" % error
+        if SHOW_ERRORS:
+            error = ssh.stderr.readlines()
+            print >>sys.stderr, "ERROR: %s" % error
     else:
         if handler:
             return handler(result)

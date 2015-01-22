@@ -1,0 +1,113 @@
+    begin
+      button = BTN_1
+      prog = lircremote
+      config = spotify_status
+    end
+
+    begin
+      button = BTN_2
+      prog = lircremote
+      config = not_supported
+    end
+
+    begin
+      button = BTN_3
+      prog = lircremote
+      config = volume_up
+    end
+
+    begin
+      button = BTN_4
+      prog = lircremote
+      config = not_supported
+    end
+
+    begin
+      button = BTN_5
+      prog = lircremote
+      config = not_supported
+    end
+
+    begin
+      button = BTN_6
+      prog = lircremote
+      config = volume_down
+    end
+
+    begin
+      button = BTN_7
+      prog = lircremote
+      config = not_supported
+    end
+
+    begin
+      button = BTN_8
+      prog = lircremote
+      config = not_supported
+    end
+
+    begin
+      button = BTN_9
+      prog = lircremote
+      config = not_supported
+    end
+
+    begin
+      button = BTN_0
+      prog = lircremote
+      config = not_supported
+    end
+
+    begin
+      button = KEY_POWER
+      prog = lircremote
+      config = close_remote
+    end
+
+    begin
+      button = KEY_RIGHT
+      prog = lircremote
+      config = spotify_next
+    end
+
+    begin
+      button = KEY_LEFT
+      prog = lircremote
+      config = spotify_previous
+    end
+
+    begin
+      button = KEY_UP
+      prog = lircremote
+      config = spotify_playpause
+    end
+
+    begin
+      button = KEY_DOWN
+      prog = lircremote
+      config = spotify_playpause
+    end
+
+    begin
+      button = KEY_ENTER
+      prog = lircremote
+      config = spotify_status
+    end
+
+    begin
+      button = KEY_PAUSE
+      prog = lircremote
+      config = not_supported
+    end
+
+    begin
+      button = KEY_MENU
+      prog = lircremote
+      config = not_supported
+    end
+
+    begin
+      button = KEY_SLEEP
+      prog = lircremote
+      config = not_supported
+    end
